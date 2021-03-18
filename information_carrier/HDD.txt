@@ -1,0 +1,6 @@
+wear
+door
+clean
+34
+2
+456
