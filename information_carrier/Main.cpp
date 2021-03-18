@@ -2,11 +2,15 @@
 
 int main()
 {
-	
-	setlocale(LC_ALL, "Rus");
+	setlocale(LC_ALL, "Russian");
 
 	List One;
+
 	One.ProgramMenu();
+
+	system("cls");
+
+	std::cout << "Good bye!";
 
 	return 0;
 }

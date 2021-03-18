@@ -1,6 +1,7 @@
 #include"Information_Carrier.h"
 
 using namespace std;
+
 Inf_type::Inf_type()
 {
 	this->produser = nullptr;
@@ -9,6 +10,7 @@ Inf_type::Inf_type()
 	this-> value = 0;
 	this-> count=0;
 }
+
 Inf_type::Inf_type(const char* p, const char* m, const char* n, double v, int c)
 {
 	this->produser = new char[strlen(p) + 1]{};
@@ -25,6 +27,7 @@ int Inf_type::GetCount()
 {
 	return this->count;
 }
+
 void Inf_type::SetProduser(char* p)
 {
 	if (this->model != nullptr)
@@ -36,6 +39,7 @@ void Inf_type::SetProduser(char* p)
 	strcpy(this->produser, p);
 	
 }
+
 void Inf_type::SetModel(char* m)
 {
 	if (this->model!=nullptr)
@@ -45,8 +49,8 @@ void Inf_type::SetModel(char* m)
 	int size = strlen(m);
 	this->model = new char[size + 1]{};
 	strcpy(this->model, m);
-	
 }
+
 void Inf_type::SetName(char* n)
 {
 	if (this->model != nullptr)
